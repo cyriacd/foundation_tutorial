@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Foundation Tutorial" %></title>
+    <!-- Google font import -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,300italic%7COswald:400,300" rel='stylesheet' type='text/css'>
+
+    <%= stylesheet_link_tag "normalize", "all" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= partial "header" %>
+    <%= yield %>
+    <%= partial "footer" %>
+  </body>
+</html>
