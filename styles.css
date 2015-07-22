@@ -1,5 +1,5 @@
 .section {
-	width: 800px;
+	width: 1000px;
 	border: 1px solid grey;
 	padding: 5px 10px;
 	margin: 25px auto;
@@ -13,4 +13,9 @@ h1, h2 {
 
 p {
 	font-family: 'Open Sans', sans-serif;
+}
+
+.code {
+	width: 500px;
+	margin: 0 auto;
 }
