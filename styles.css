@@ -1,0 +1,16 @@
+.section {
+	width: 800px;
+	border: 1px solid grey;
+	padding: 5px 10px;
+	margin: 25px auto;
+	box-shadow: 5px 5px 5px grey;
+	color: #333333;
+}
+
+h1, h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
