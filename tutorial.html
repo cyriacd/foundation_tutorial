@@ -24,12 +24,14 @@
       <!--Top Bar-->
       <div class="section">
         <h2>Top Bar</h2>
+        <p>Foundation has an inbuilt system for making a top bar for easier navigation. Foundation allows to easily add a top bar with links to different pages.The first thing to do is to have a nav tag with class top-bar, a foundation specific attribute named data-topbar and a role attribute with value navigation. To have a title in the top bar with an unordered list with class title-area with a list item with class name. Then add a section tag with unordered lists within it for left and right aligned menu items with right or left class names respectively. Every list item within this will be added as menu items on the top bar. There are also options to add dropdown item. This is in the example below.</p>
         <iframe height='500' scrolling='no' src='http://codepen.io/Avanyx/embed/OVoMQP/?height=500&theme-id=17075&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/Avanyx/pen/OVoMQP/'>The Top Bar</a> by Dalton Mankin (<a href='http://codepen.io/Avanyx'>@Avanyx</a>) on <a href='http://codepen.io'>CodePen</a>.
         </iframe>
       </div>
       <!--Off canvas menu-->
       <div class="section">
         <h2>Off canvas menu</h2>
+        <p>The Off-Canvas menu is great for fitting a lot of elements on a small screen. It is ideal for the mobile view as it keeps the navigation off the screen until the user asks to see it. The Off-Canvas menu is made up of a tab bar with at least the toggle menu button. You can also add a title or links to the bar if you want. The menu itself is an unordered list of all the links or elements you want in the menu. The entire site needs to be wrapped in a couple divs for the menu to slide in correctly. Check out the example below for an idea of how it works.</p>
         <iframe height='500' scrolling='no' src='http://codepen.io/Avanyx/embed/RPYabN/?height=500&theme-id=17075&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/Avanyx/pen/RPYabN/'>The Off Canvas Menu</a> by Dalton Mankin (<a href='http://codepen.io/Avanyx'>@Avanyx</a>) on <a href='http://codepen.io'>CodePen</a>.
         </iframe>
       </div>
@@ -42,12 +44,12 @@
       <div class="section">
         <h2>Mobile Grid</h2>
         <p>The mobile grid is the type of grid that will be displayed when the browser window that the website is being displayed on is 768px wide or less. In order to specify the number of blocks wide you want your column element to be on a small screen like this, you use the “small-#” class, where # is a number from 1 to 12. All of the column widths of the columns in a row must add up to 12 in order for the table to be centered within the web page. For example, say we want to make two columns, the first of which is 4 blocks wide, and the second is 8 blocks wide. We will use the following code snippet:</p>
-        <code>
+        <div class="code">
           &lt;div class=”row”&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=”small-4 columns”&gt;Column 1&lt;/div&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=”small-8 columns”&gt;Column 2&lt;/div&gt;<br>
         &lt;/div&gt;
-        </code>
+        </div>
         <p>The 4 and 8 specify the width of the column, and the word “small” specifies that this size is for when the screen is less 768px wide or less. The next aspect to cover is what to do when the screen is larger than 768px. This is where the desktop grid comes into the picture.</p>
         <iframe height='500' scrolling='no' src='http://codepen.io/Avanyx/embed/BNOKjp/?height=500&theme-id=17075&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/Avanyx/pen/BNOKjp/'>Adding some content / small grid</a> by Dalton Mankin (<a href='http://codepen.io/Avanyx'>@Avanyx</a>) on <a href='http://codepen.io'>CodePen</a>.
         </iframe>
@@ -56,10 +58,10 @@
       <div class="section">
         <h2>Desktop Grid</h2>
         <p>The desktop grid is just like the mobile grid except it is the grid that is displayed when the screen is larger than 768px wide. Instead of “small” in the class name, we will use the word “large.” Here is an example of code that will generate one column that is 5 blocks wide and another that is 7 blocks wide on a large screen:</p>
-        <code>&lt;div class=”row”&gt;<br>
+        <div class="code">&lt;div class=”row”&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=”large-5 columns”&gt;Column 1&lt;/div&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=”large-7 columns”&gt;Column 2&lt;/div&gt;<br>
-        &lt;/div&gt;</code>
+        &lt;/div&gt;</div>
         <p>Again, the number of blocks adds up to 12 for this row, which ensures that the content will effectively fill the entire width of the screen. The mobile grid and the desktop grid are both useful on their own, but they reach their full potential when used together.</p>
         <iframe height='500' scrolling='no' src='http://codepen.io/Avanyx/embed/vOzGOE/?height=500&theme-id=17075&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/Avanyx/pen/vOzGOE/'>Adding some content / large grid</a> by Dalton Mankin (<a href='http://codepen.io/Avanyx'>@Avanyx</a>) on <a href='http://codepen.io'>CodePen</a>.
         </iframe>
@@ -68,10 +70,10 @@
       <div class="section">
         <h2>Mobile and Desktop Working Together</h2>
         <p>Using the mobile grid and desktop grid together ensures that a page will be look great on both small and large screens. In order to put these two concepts together, all that needs to be done is use both the “small” and “large” keywords within the class of a particular column element. Below is an example of code that will generate two columns. On a small screen, the first column will be 4 blocks wide, while on a large screen is will be 5 blocks wide. The second column will be 8 blocks wide on a small screen and 7 blocks wide on a large screen.</p>
-        <code>&lt;div class=”row”&gt;<br>
+        <div class="code">&lt;div class=”row”&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=”large-5 columns”&gt;Column 1&lt;/div&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=”large-7 columns”&gt;Column 2&lt;/div&gt;<br>
-        &lt;/div></code>
+        &lt;/div></div>
         <p>Again, the number of blocks adds up to 12 for this row, which ensures that the content will effectively fill the entire width of the screen. The mobile grid and the desktop grid are both useful on their own, but they reach their full potential when used together.</p>
         <iframe height='500' scrolling='no' src='http://codepen.io/Avanyx/embed/EjeKKG/?height=500&theme-id=17075&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/Avanyx/pen/EjeKKG/'>Bringing it together</a> by Dalton Mankin (<a href='http://codepen.io/Avanyx'>@Avanyx</a>) on <a href='http://codepen.io'>CodePen</a>.
         </iframe>
@@ -80,7 +82,7 @@
       <div class="section">
         <h2>Block Grid</h2>
         <p>The block grid is very similar to the mobile and desktop grid system, except that it resizes content based on a fixed number of elements across. For example, if you wanted to display a row of 3 images that each took up ⅓ of the screen, the block grid would be the solution. As the mobile and desktop grid used div element for the row and columns, the block grid uses an unordered list. Another similarity between these two systems is the “small” and “large” keywords. Here is some code that will display 8 images. On a large screen, each image will take up ¼ of the screen, so there will be 4 across. On a small screen, each image will take up ½ of the screen, so there will be 2 across.</p>
-        <code>&lt;ul class="small-block-grid-2 large-block-grid-4"&gt;<br>
+        <div class="code">&lt;ul class="small-block-grid-2 large-block-grid-4"&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="image1.jpeg"&gt;&lt;/li&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="image2.jpeg"&gt;&lt;/li&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="image3.jpeg"&gt;&lt;/li&gt;<br>
@@ -89,7 +91,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="image6.jpeg"&gt;&lt;/li&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="image7.jpeg"&gt;&lt;/li&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="image8.jpeg"&gt;&lt;/li&gt;<br>
-        &lt;/ul&gt;</code>
+        &lt;/ul&gt;</div>
         <p>Here, as the screen size changes, as long as it is less than or equal to 768px wide, 2 images will fill the screen width, resizing the images to achieve this. When the screen is larger than this, 4 images will take up the width and be resized automatically to fill the width.</p>
         <iframe height='500' scrolling='no' src='http://codepen.io/Avanyx/embed/WvgwxE/?height=500&theme-id=17075&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/Avanyx/pen/WvgwxE/'>The block grid</a> by Dalton Mankin (<a href='http://codepen.io/Avanyx'>@Avanyx</a>) on <a href='http://codepen.io'>CodePen</a>.
         </iframe>
@@ -97,22 +99,26 @@
       <!--Buttons-->
       <div class="section">
         <h2>Buttons</h2>
+        <p>Adding neatly styled and colorful buttons is made very easy with Foundation. Buttons can easily be added with an anchor tag with a button class. This generates a simple button with the text displayed on the button. Adding more classes to this will style the buttons even more. For example, adding a tiny, small, large, expanded, round and radius classes will style the buttons accordingly. Also adding classes like success (green), secondary (gray), alert (red) etc… adds color to the button. By listing the buttons as list items in an unordered list with class button-group will make a button group.</p>
         <iframe height='500' scrolling='no' src='http://codepen.io/Avanyx/embed/bdxpqr/?height=500&theme-id=17075&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/Avanyx/pen/bdxpqr/'>Buttons</a> by Dalton Mankin (<a href='http://codepen.io/Avanyx'>@Avanyx</a>) on <a href='http://codepen.io'>CodePen</a>.
         </iframe>
       </div>
       <!--Plugins-->
       <div class="section">
         <h2>Plugins</h2>
+        <p>Foundation also comes with a lot of plugins that uses JavaScript (a client side programming language). They include tabs, dropdowns, accordions, orbit, abide validation, modals, tooltips etc… These help to make a website to be more functional and organized. Some of these plugins are described in the following sections. For more plugins, the Zurb Foundation official documentation will be very helpful.</p>
       </div>
       <!--Orbit-->
       <div class="section">
         <h2>Orbit</h2>
+        <p>Traditional ways of adding an image slider is very complicated compared to what Foundation offers. Orbit helps with making image sliders in a very intuitive and simple way. Although orbit is no longer officially supported by (no more updates) Zurb (the group that designed Foundation), it will still be part of the package. To use an orbit, simply add an unordered list with the foundation specific attribute data-orbit. Then, add images as list items. It is also possible to add a caption by adding a div with the class orbit-caption within the list tag for each image. The caption goes within the div tags.</p>
         <iframe height='500' scrolling='no' src='http://codepen.io/Avanyx/embed/NqLNvw/?height=500&theme-id=17075&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/Avanyx/pen/NqLNvw/'>Orbit</a> by Dalton Mankin (<a href='http://codepen.io/Avanyx'>@Avanyx</a>) on <a href='http://codepen.io'>CodePen</a>.
         </iframe>
       </div>
       <!--Modals-->
       <div class="section">
         <h2>Modals</h2>
+        <p>Modals are useful as pop ups or alerts. They show up over top of the page and can be dismissed without affecting the page beneath. Foundation also makes it very simple to implement. You simply add the attribute “data-reveal-id” with the name of the class that contains the content of the modal and you are all set go. Check out the example below to see it all written out.</p>
         <iframe height='500' scrolling='no' src='http://codepen.io/Avanyx/embed/zGJqdb/?height=500&theme-id=17075&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/Avanyx/pen/zGJqdb/'>Modals</a> by Dalton Mankin (<a href='http://codepen.io/Avanyx'>@Avanyx</a>) on <a href='http://codepen.io'>CodePen</a>.
         </iframe>
       </div>

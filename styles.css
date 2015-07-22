@@ -1,5 +1,5 @@
 .section {
-	width: 800px;
+	width: 1000px;
 	border: 1px solid grey;
 	padding: 5px 10px;
 	margin: 25px auto;
@@ -15,7 +15,13 @@ p {
 	font-family: 'Open Sans', sans-serif;
 }
 
+<<<<<<< HEAD
 code {
 	text-align: center;
 	margin: 25px auto;
+=======
+.code {
+	width: 500px;
+	margin: 0 auto;
+>>>>>>> bc4811a399763f9c7803c869680b42e3c852a6bd
 }
