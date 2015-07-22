@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <meta charset="utf-8">
     <title>Foundation Tutorial</title>
     <link rel="stylesheet" href="styles.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700|Open+Sans' rel='stylesheet' type='text/css'>
@@ -35,28 +36,61 @@
       <!--Grid system-->
       <div class="section">
         <h2>Grid system</h2>
+        <p>The backbone of foundation is the grid system. This system enables a programmer to write a website that is compatible with both mobile and desktop browsers. There are three different parts to this system; the mobile grid, the desktop grid, and the block grid. HTML div elements are what Foundation uses as the building blocks for a website. Div elements hold the different types of website elements that a programmer may want to display and they are selected using the class attribute. A div element with the class “row” will be a container for columns of a grid. Inside this element, we are able to nest other div elements with the class “column” that will serve as columns in a table. By default, Foundation divides the screen into 12 blocks across, and this tutorial will do the same.</p>
       </div>
       <!--Mobile Grid-->
       <div class="section">
         <h2>Mobile Grid</h2>
+        <p>The mobile grid is the type of grid that will be displayed when the browser window that the website is being displayed on is 768px wide or less. In order to specify the number of blocks wide you want your column element to be on a small screen like this, you use the “small-#” class, where # is a number from 1 to 12. All of the column widths of the columns in a row must add up to 12 in order for the table to be centered within the web page. For example, say we want to make two columns, the first of which is 4 blocks wide, and the second is 8 blocks wide. We will use the following code snippet:</p>
+        <code>
+          &lt;div class=”row”&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=”small-4 columns”&gt;Column 1&lt;/div&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=”small-8 columns”&gt;Column 2&lt;/div&gt;<br>
+        &lt;/div&gt;
+        </code>
+        <p>The 4 and 8 specify the width of the column, and the word “small” specifies that this size is for when the screen is less 768px wide or less. The next aspect to cover is what to do when the screen is larger than 768px. This is where the desktop grid comes into the picture.</p>
         <iframe height='500' scrolling='no' src='http://codepen.io/Avanyx/embed/BNOKjp/?height=500&theme-id=17075&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/Avanyx/pen/BNOKjp/'>Adding some content / small grid</a> by Dalton Mankin (<a href='http://codepen.io/Avanyx'>@Avanyx</a>) on <a href='http://codepen.io'>CodePen</a>.
         </iframe>
       </div>
       <!--Desktop Grid-->
       <div class="section">
         <h2>Desktop Grid</h2>
+        <p>The desktop grid is just like the mobile grid except it is the grid that is displayed when the screen is larger than 768px wide. Instead of “small” in the class name, we will use the word “large.” Here is an example of code that will generate one column that is 5 blocks wide and another that is 7 blocks wide on a large screen:</p>
+        <code>&lt;div class=”row”&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=”large-5 columns”&gt;Column 1&lt;/div&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=”large-7 columns”&gt;Column 2&lt;/div&gt;<br>
+        &lt;/div&gt;</code>
+        <p>Again, the number of blocks adds up to 12 for this row, which ensures that the content will effectively fill the entire width of the screen. The mobile grid and the desktop grid are both useful on their own, but they reach their full potential when used together.</p>
         <iframe height='500' scrolling='no' src='http://codepen.io/Avanyx/embed/vOzGOE/?height=500&theme-id=17075&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/Avanyx/pen/vOzGOE/'>Adding some content / large grid</a> by Dalton Mankin (<a href='http://codepen.io/Avanyx'>@Avanyx</a>) on <a href='http://codepen.io'>CodePen</a>.
         </iframe>
       </div>
       <!--Mobile and Desktop Working together-->
       <div class="section">
-        <h2>Mobile and Desktop Working together</h2>
+        <h2>Mobile and Desktop Working Together</h2>
+        <p>Using the mobile grid and desktop grid together ensures that a page will be look great on both small and large screens. In order to put these two concepts together, all that needs to be done is use both the “small” and “large” keywords within the class of a particular column element. Below is an example of code that will generate two columns. On a small screen, the first column will be 4 blocks wide, while on a large screen is will be 5 blocks wide. The second column will be 8 blocks wide on a small screen and 7 blocks wide on a large screen.</p>
+        <code>&lt;div class=”row”&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=”large-5 columns”&gt;Column 1&lt;/div&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=”large-7 columns”&gt;Column 2&lt;/div&gt;<br>
+        &lt;/div></code>
+        <p>Again, the number of blocks adds up to 12 for this row, which ensures that the content will effectively fill the entire width of the screen. The mobile grid and the desktop grid are both useful on their own, but they reach their full potential when used together.</p>
         <iframe height='500' scrolling='no' src='http://codepen.io/Avanyx/embed/EjeKKG/?height=500&theme-id=17075&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/Avanyx/pen/EjeKKG/'>Bringing it together</a> by Dalton Mankin (<a href='http://codepen.io/Avanyx'>@Avanyx</a>) on <a href='http://codepen.io'>CodePen</a>.
         </iframe>
       </div>
       <!--Block Grid-->
       <div class="section">
         <h2>Block Grid</h2>
+        <p>The block grid is very similar to the mobile and desktop grid system, except that it resizes content based on a fixed number of elements across. For example, if you wanted to display a row of 3 images that each took up ⅓ of the screen, the block grid would be the solution. As the mobile and desktop grid used div element for the row and columns, the block grid uses an unordered list. Another similarity between these two systems is the “small” and “large” keywords. Here is some code that will display 8 images. On a large screen, each image will take up ¼ of the screen, so there will be 4 across. On a small screen, each image will take up ½ of the screen, so there will be 2 across.</p>
+        <code>&lt;ul class="small-block-grid-2 large-block-grid-4"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="image1.jpeg"&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="image2.jpeg"&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="image3.jpeg"&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="image4.jpeg"&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="image5.jpeg"&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="image6.jpeg"&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="image7.jpeg"&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="image8.jpeg"&gt;&lt;/li&gt;<br>
+        &lt;/ul&gt;</code>
+        <p>Here, as the screen size changes, as long as it is less than or equal to 768px wide, 2 images will fill the screen width, resizing the images to achieve this. When the screen is larger than this, 4 images will take up the width and be resized automatically to fill the width.</p>
         <iframe height='500' scrolling='no' src='http://codepen.io/Avanyx/embed/WvgwxE/?height=500&theme-id=17075&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/Avanyx/pen/WvgwxE/'>The block grid</a> by Dalton Mankin (<a href='http://codepen.io/Avanyx'>@Avanyx</a>) on <a href='http://codepen.io'>CodePen</a>.
         </iframe>
       </div>
