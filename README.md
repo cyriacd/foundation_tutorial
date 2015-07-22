@@ -1,4 +1,4 @@
-#Tech Task - Foundation Tutorila
+#Tech Task - Foundation Tutorial
 
 ##This is a basic tutorial for using the responsive front-end framework, Foundation
 
